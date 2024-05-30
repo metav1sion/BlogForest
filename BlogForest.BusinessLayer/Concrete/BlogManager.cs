@@ -57,5 +57,10 @@ namespace BlogForest.BusinessLayer.Concrete
         {
             return _blogDal.GetBlogsByAppUserId(id);
         }
+
+        public void TIncreaseBlogViewCount(int id)
+        {
+            _blogDal.IncreaseBlogViewCount(id);
+        }
     }
 }
